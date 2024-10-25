@@ -192,7 +192,7 @@ height: auto;
       cursor: pointer;
     }
       
-      html, body {
+ html, body {
         height: 100%;
       }
       <!DOCTYPE html>
@@ -210,10 +210,10 @@ height: auto;
     <script>
       window.dataLayer = window.dataLayer || [];
 
-      function gtag() {
+function gtag() {
         dataLayer.push(arguments);
       }
-      gtag('js', new Date());
+ gtag('js', new Date());
       gtag('config', 'GA_MEASUREMENT_ID');
     </script>
     <!-- Google Tag Manager -->
@@ -221,7 +221,7 @@ height: auto;
     <script>
       window.dataLayer = window.dataLayer || [];
 
-      function gtag() {
+ function gtag() {
         dataLayer.push(arguments);
       }
       gtag('js', new Date());
@@ -238,7 +238,7 @@ height: auto;
         padding-top: 9.5%;
       }
 
-      a:hover,
+ a:hover,
       button:hover {
         cursor: url('images/handblue120.png'), pointer;
       }

@@ -1,386 +1,251 @@
 body {
-    font-family: Roboto, sans-serif;
-    font-size: 13.3333px;
-    color: #ffffff;
-    text-align: center;
-    background-color: #1C1C1C;
-    cursor: url('images/pointerblue1.png'), none;
-    padding-top: 9.5%;
-  }
-
-  a:hover,
-  button:hover {
-    cursor: url('images/handblue120.png'), pointer;
-  }
-
-  .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 9.5%;
-    backdrop-filter: blur(18px);
-    box-shadow: 0 0 40px #0DD7F2;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 1%;
-    z-index: 5;
-    margin: auto;
-  }
-
-  .logo {
-    height: 45px;
-    border-radius: 15px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 5px;
-    user-select: none;
-  }
-
-  .centered-image {
-    width: 3vw;
-    height: 3vw;
-    position: absolute;
-    top: 5px;
-    right: -358px;
-  }
-
-  .navitems a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease-in-out;
-  }
-
-  .navitems a:hover {
-    color: #0DD7F2;
-  }
-
-  .navbar-nav li a {
-    background-color: none !important;
-    color: white !important;
-    padding: 15px;
-  }
-
-  .navbar-nav li a:hover {
-    background-color: none !important;
-    color: #0DD7F2 !important;
-    font-weight: 500;
-    transition: color 0.3s ease-in-out;
-  }
-
-  a {
-    color: white;
-    text-decoration: none;
-    background-color: none;
-  }
-
-  .active a {
-    color: #0DD7F2;
-    text-decoration: none;
-    border: 2px solid #0DD7F2;
-    padding: 10px 20px;
-    border-radius: 20px;
-  }
-
-  .navbar-inverse .navbar-nav>.active>a { 
-    color: #0DD7F2 !important;
-    border-color: #0DD7F2;
-    background-color: #1C1C1C;
-  }
-
-  /* For Chrome, Safari, and Opera */
-  ::-webkit-scrollbar {
-    width: 16px;
-  }
-
-  ::-webkit-scrollbar-corner {
-    background: transparent;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background: #0DD7F2;
-    border: 4px solid transparent;
-    background-clip: content-box;
-    border-radius: 8px;
-    transition: .3s;
-  }
-
-  .btn {
-color: #fff;
-background: rgb(121, 121, 121);
-background: #292929;
-padding: 10px 16px;
-line-height: 1.3333333;
-border-radius: 10px;
-border-color: #0DD7F2;
-transition: background-color 0.3s ease, transform 0.5s ease;
-box-shadow: 0 2px 5px rgba(115, 112, 112, 0.3);
-margin-right: 10px;
-position: relative;
-}
-
-.btn:hover {
-background-color: #555;
-color: #fff;
-box-shadow: 3px 3px 3px #0DD7F2;
-transform: translateY(-5px);
-transition: transform 0.5s ease, background-color 0.5s ease; /* Slow down the transform transition */
-border-color: #0DD7F2;
-}
-
-
-.container {
-margin: 0 auto;
-padding: 8px;
-}
-
-
-#header {
-margin-bottom: 0;
-position: relative;
-}
-
-#header img {
-margin-top: 20px;
-}
-
-.alert {
-margin: 0 auto;
-width: 55%;
-color: #fff;
-background-color:  #292929;
-border-color: #676767;
-padding: 8px 0 14px 0;
-margin-bottom: 10px;
-margin-top: 5px;
-border-radius: 50px;
-}
-
-@media (min-width: 320px) and (max-width: 768px) {
-#quickMenu {
-width: 56%;
-}
-}
-
-h4 {
-font-size: 24px;
-font-weight: bold;
-margin-bottom: 10px;
-margin-top: 25px;
-position: relative;
-}
-
-.img-responsive {
-display: block;
-max-width: 100%;
-height: auto;
-}
-
-.settings-button {
-      width: 3vw;
-      height: 3vw;
-      position: absolute;
-      top: 5px;
-      right: -426px;
-      border: none;
-      background-color: transparent;
-      background-image: url('./images/gearcog.png');
-      background-size: cover;
-      cursor: pointer;
-    }
-      
- html, body {
-        height: 100%;
-      }
-      <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Unblocked Websites | Gamesites</title>
-    <link rel="icon" type="image/png" href="images/uw.png" sizes="16x16" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./css/gamesites.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" />
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-
-function gtag() {
-        dataLayer.push(arguments);
-      }
- gtag('js', new Date());
-      gtag('config', 'GA_MEASUREMENT_ID');
-    </script>
-    <!-- Google Tag Manager -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KXRHPNW89S"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-
- function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-      gtag('config', 'G-KXRHPNW89S');
-    </script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINKED!</title>
     <style>
-      body {
-        font-family: Roboto, sans-serif;
-        font-size: 13.3333px;
-        color: #ffffff;
-        text-align: center;
-        background-color: #1C1C1C;
-        cursor: url('images/pointerblue1.png'), none;
-        padding-top: 9.5%;
-      }
-
- a:hover,
-      button:hover {
-        cursor: url('images/handblue120.png'), pointer;
-      }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+        }
+        .sidebar {
+            height: 100vh;
+            width: 250px;
+            position: fixed;
+            background: linear-gradient(135deg, #3a3a3a, #1e1e1e);
+            padding: 20px;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+            overflow-y: auto;
+        }
+        .sidebar h2 {
+            color: #1abc9c;
+            margin-bottom: 40px;
+            font-size: 1.8rem;
+            text-align: center;
+        }
+        .sidebar a {
+            display: block;
+            color: white;
+            padding: 12px;
+            margin: 8px 0;
+            text-decoration: none;
+            font-size: 1.1rem;
+            background-color: #333;
+            border-radius: 8px;
+            transition: background 0.3s, transform 0.2s;
+        }
+        .sidebar a:hover {
+            background-color: #1abc9c;
+            transform: scale(1.05);
+        }
+        .main-content {
+            margin-left: 260px;
+            padding: 20px;
+            background-color: #262626;
+            min-height: 100vh;
+            display: none;
+        }
+        .main-content.active {
+            display: block;
+        }
+        .main-content h1 {
+            font-size: 2.2rem;
+            color: #1abc9c;
+            margin-bottom: 20px;
+        }
+        .accordion {
+            width: 100%;
+            background-color: #444;
+            border: none;
+            color: white;
+            padding: 18px;
+            text-align: left;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .accordion:hover {
+            background-color: #1abc9c;
+        }
+        .accordion.active {
+            background-color: #1abc9c;
+        }
+        .accordion:after {
+            content: '\002B';
+            font-size: 20px;
+            float: right;
+            color: white;
+        }
+        .accordion.active:after {
+            content: "\2212";
+        }
+        .panel {
+            padding: 0 18px;
+            background-color: #333;
+            display: none;
+            overflow: hidden;
+            border-radius: 0 0 8px 8px;
+        }
+        .panel a {
+            display: block;
+            color: #1abc9c;
+            margin: 10px 0;
+            text-decoration: none;
+        }
+        .panel a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #ccc;
+            background-color: #1e1e1e;
+            border-top: 1px solid #333;
+            margin-top: 20px;
+        }
     </style>
-  <body>
-    <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a href="https://github.com/SchoolIzBoring">
-            <img src="./images/uw.png" alt="Unblocked" width="50" height="50" class="logo" />
-          </a>
-        </div>
-        <div class="navitems">
-          <ul class="nav navbar-nav">
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-            <li class="active">
-              <a href="gamesites.html">Gamesites</a>
-            </li>
-            <li>
-              <a href="proxies.html">Proxies</a>
-            </li>
-            <li>
-              <a href="other.html">Other</a>
-            </li>
-            <li>
-              <a href="tools.html">Tools</a>
-            </li>
-            <li>
-              <a href="settings.html">Settings</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>LINKED!</h2>
+        <a onclick="showSection('home')">Home</a>
+        <a onclick="showSection('proxies')">Proxies</a>
+        <a onclick="showSection('games')">Games</a>
+        <a onclick="showSection('movies')">Movies</a>
+        <a onclick="showSection('multipurpose')">Education</a>
+        <a onclick="showSection('coder')">Coder Stuff</a>
+        <a onclick="showSection('credits')">Credits</a>
+        <a onclick="showSection('proxy')">Make a Proxy</a>
     </div>
+
+<div id="home" class="main-content active">
+        <h1>Welcome to LINKED!</h1>
+        <p>Select a category from the sidebar to get started.</p>
     </div>
-    </nav>
-    <div id="header">
-      <img src="logo.png" alt="Unblocked" />
+
+<div id="proxies" class="main-content">
+        <h1>Proxies</h1>
+        <button class="accordion">Rammerhead</button>
+        <div class="panel">
+            <a href="#">Link 1 for RammerHead</a>
+            <a href="#">Link 2 for RammerHead</a>
+        </div>
+        <button class="accordion">Interstellar</button>
+        <div class="panel">
+            <a href="#">Link 1 for Interstellar</a>
+            <a href="#">Link 2 for Interstellar</a>
+        </div>
     </div>
-    <p>Number of users: <span id="connection-counter">1000</span>
-    </p>
-    <div class="container">
-      <div class="websites-container">
-        <div class="header">
-          <h4 class="websites-title">
-            <span class="websites-text">
-              <img src="./images/computer.png" /> Gaming Websites <img src="./images/computer.png" />
-          </h4>
+
+ <div id="games" class="main-content">
+        <h1>Games</h1>
+        <button class="accordion">Extreme math</button>
+        <div class="panel">
+            <a href="https://tutoring4free.org/">Extreme math Link 1</a>
+            <a href="https://easytutoring.app/">Extreme math link 2</a>
+            <a href="https://extrememath.dev/">Extreme math link 3</a>
+            <a href="https://simply-history.xyz/#google_vignette">Extreme math link 4</a>
+            <a href="https://extrememath.org/">Extreme math link 5</a>
+            <a href="https://simple-education.xyz/#google_vignette">Extreme math link 6</a>
         </div>
-        <div class="content active" id="content"></div>
-        <div class="row">
-          <div class="col-md-4">
-            <a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://3kh0.github.io">
-              <img src="./images/3kh0.png" alt="icon" width="16" height="16" />&nbsp;3kh0 </a>
-          </div>
-          <div class="col-md-4">
-            <a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://ellieeet123.github.io">
-              <img src="./images/pringles.png" alt="icon" width="16" height="16" />&nbsp;Pringles </a>
-          </div>
-          <div class="col-md-4">
-            <a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://games.unblockify.gq">
-              <img src="./images/unblockify_games.png" alt="icon" width="16" height="16" />&nbsp;Unblockify Games </a>
-          </div>
+        <button class="accordion">Minecraft</button>
+        <div class="panel">
+            <a href="https://g.deev.is/">Minecraft link 1</a>
+            <a href="https://eaglercraft.q13x.com/">Minecraft link 2</a>
+            <a href="https://ubg100.github.io/eaglercraft.html">Minecraft link 3</a>
+            <a href="https://burritoedition.github.io/emu/Minecraft/web/index.html">Minecraft link 4</a>
+            <a href="https://reslauncher.vercel.app/">Minecraft link 5</a>
+            <a href="https://sd592g.github.io/zj684od4lfg/">Minecraft link 6</a>
+            <a href="https://eagler.almondnet.cn/Nebula.html">Minecraft link 7</a>
+            <a href="https://mess.eu.org/">Minecraft link 8</a>
+            <a href="https://precisionclient-88k.pages.dev/">Minecraft link 9</a>
         </div>
-        <div class="row">
-          <div class="col-md-4">
-            <a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://lioxryt.github.io/">
-              <img src="./images/lioxryt.png" alt="icon" width="16" height="16" />&nbsp;Lioxryt Games </a>
-          </div>
-          <div class="col-md-4">
-            <a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://outred.github.io">
-              <img src="./images/outred.png" alt="icon" width="16" height="16" />&nbsp;OutRed Games </a>
-          </div>
-          <div class="col-md-4">
-            <a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://gba.js.org">
-              <img src="./images/gba.png" alt="icon" width="16" height="16" />&nbsp;Gba Online </a>
-          </div>
+        <button class="accordion">Google sites</button>
+        <div class="panel">
+            <a href="https://sites.google.com/site/tyronesgameshack/">Tyrones games link 1</a>
+            <a href="https://sites.google.com/site/unblockedgames66ez/">Unblocked games 66 link 2</a>
+            <a href="https://sites.google.com/site/unblockedgame76/">Unblocked games 76 link 3</a>
+            <a href="https://sites.google.com/view/games-unblockedd/">games unblocked link 4</a>
+            <a href="https://sites.google.com/site/classroom6x/unblockedgames">Classroom6x link 5</a>
+            <a href="https://sites.google.com/view/games-unblocked/">games unblocked2 link 6</a>
+            <a href="https://sites.google.com/site/thegamecompilation/home?authuser=0">unblocked games world link 7</a>
         </div>
-        <div class="row">
-          <div class="col-md-4">
-            <a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://zatoga.vercel.app">
-              <img src="./images/zatoga.png" alt="icon" width="16" height="16" />&nbsp;Zatoga </a>
-          </div>
-          <div class="col-md-4">
-            <a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://binbashbanana.github.io/webretro">
-              <img src="./images/wr.png" alt="icon" width="16" height="16" />&nbsp;Web Retro </a>
-          </div>
-          <div class="col-md-4">
-            <a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://archive.org/details/internetarcade">
-              <img src="./images/archive.png" alt="icon" width="16" height="16" />&nbsp;Internet Arcade </a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://593d4d43-3073-45d0-86e2-0443d15adf21.id.repl.co/">
-              <img src="./images/sh.png" alt="icon" width="16" height="16" />&nbsp;School Heaven </a>
-          </div>
-          <div class="col-md-4">
-            <a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://mathgames66.github.io">
-              <img src="./images/mg.jpg" alt="icon" width="16" height="16" />&nbsp;MathGames66 </a>
-          </div>
-          <div class="col-md-4">
-            <a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://abc6782.github.io/core-html/games.html">
-              <img src="./images/abc.png" alt="icon" width="16" height="16" />&nbsp;ABC Games </a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://yum-yum-games-go.snatch-a-bite.com/">
-              <img src="./images/tmm.png" alt="icon" width="16" height="16" />&nbsp;The Modern Method </a>
-          </div>
-          <div class="col-md-4">
-            <a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://skool.world">
-              <img src="./images/skool.png" alt="icon" width="16" height="16" />&nbsp;Skool </a>
-          </div>
-          <div class="col-md-4">
-            <a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://oddisbest.dev">
-              <img src="./images/og.png" alt="icon" width="16" height="16" />&nbsp;Odd Games </a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://bidoofery.github.io">
-              <img src="./images/bidoofery.png" alt="icon" width="16" height="16" />&nbsp;Bidoofery </a>
-          </div>
-          <div class="col-md-4">
-            <a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://theooofficial.github.io/myRETROGAMES">
-              <img src="./images/rg.png" alt="icon" width="16" height="16" />&nbsp;Retro Games </a>
-          </div>
-          <div class="col-md-4">
-            <a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://cpsgames.herokuapp.com">
-              <img src="./images/shs.png" alt="icon" width="16" height="16" />&nbsp;SHS Games </a>
-          </div>
-        </div>
-      </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/keen-slider"></script>
-    <script src="./js/common.js"></script>
-    <script src="./js/index.js"></script>
+
+<div id="movies" class="main-content">
+        <h1>Movies</h1>
+        <button class="accordion">Movies</button>
+        <div class="panel">
+            <a href="https://hdtoday.tv/filter?type=tv&quality=all&release_year=all&genre=3&country=all&page=46">HDTODAY link 1</a>
+            <a href="https://genesishd.tv/">HDTODAY link 2</a>
+            <a href="https://hdtoday.cc/">HDTODAY link 3</a>
+        </div>
+    </div>
+
+ <div id="multipurpose" class="main-content">
+        <h1>Education</h1>
+        <button class="accordion">Tools</button>
+        <div class="panel">
+            <a href="https://chatgpt.com/">CHATGPT</a>
+        </div>
+    </div>
+
+<div id="coder" class="main-content">
+        <h1>Coder Stuff</h1>
+        <button class="accordion">Coding Resources</button>
+        <div class="panel">
+            <a href="#">Resource Link 1</a>
+        </div>
+    </div>
+
+ <div id="credits" class="main-content">
+        <h1>Credits</h1>
+        <button class="accordion">Acknowledgements</button>
+        <div class="panel">
+            <a href="#">Credit Link 1</a>
+        </div>
+    </div>
+
+ <div id="proxy" class="main-content">
+        <h1>Make a Proxy</h1>
+        <button class="accordion">Guides</button>
+        <div class="panel">
+            <a href="#">Proxy Guide Link 1</a>
+        </div>
+    </div>
+
+  <footer>
+        <p>&copy; 2024 LINKED! | All Rights Reserved</p>
+    </footer>
+
+<script>
+        function showSection(sectionId) {
+            var sections = document.getElementsByClassName("main-content");
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].classList.remove("active");
+            }
+            document.getElementById(sectionId).classList.add("active");
+        }
+
+        var acc = document.getElementsByClassName("accordion");
+        for (var i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
 </html>
+

@@ -210,5 +210,24 @@
 <script>
         function showSection(sectionId) {
             var sections = document.getElementsByClassName("main-content");
-            for (var i = 0; i < sections
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].classList.remove("active");
+            }
+            document.getElementById(sectionId).classList.add("active");
+        }
 
+var acc = document.getElementsByClassName("accordion");
+        for (var i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+</script>
+</body>
+</html>

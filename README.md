@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -56,6 +56,7 @@
             background-color: #262626;
             overflow-y: auto;
             display: none;
+            animation: fadeIn 0.3s ease;
         }
         .main-content.active {
             display: block;
@@ -136,12 +137,12 @@
             <a onclick="showSection('proxy')">Make a Proxy</a>
         </div>
 
-<div id="home" class="main-content active">
+ <div id="home" class="main-content active">
             <h1>Welcome to LINKED!</h1>
             <p>Select a category from the sidebar to get started.</p>
         </div>
 
-<div id="proxies" class="main-content">
+ <div id="proxies" class="main-content">
             <h1>Proxies</h1>
             <button class="accordion">Rammerhead</button>
             <div class="panel">
@@ -155,40 +156,41 @@
             </div>
         </div>
 
-<div id="games" class="main-content">
-        <h1>Games</h1>
-        <button class="accordion">Extreme math</button>
-        <div class="panel">
-            <a href="https://tutoring4free.org/">Extreme math Link 1</a>
-            <a href="https://easytutoring.app/">Extreme math link 2</a>
-            <a href="https://extrememath.dev/">Extreme math link 3</a>
-            <a href="https://simply-history.xyz/#google_vignette">Extreme math link 4</a>
-            <a href="https://extrememath.org/">Extreme math link 5</a>
-            <a href="https://simple-education.xyz/#google_vignette">Extreme math link 6</a>
+ <div id="games" class="main-content">
+            <h1>Games</h1>
+            <button class="accordion">Extreme Math</button>
+            <div class="panel">
+                <a href="https://tutoring4free.org/">Extreme Math Link 1</a>
+                <a href="https://easytutoring.app/">Extreme Math Link 2</a>
+                <a href="https://extrememath.dev/">Extreme Math Link 3</a>
+                <a href="https://simply-history.xyz/#google_vignette">Extreme Math Link 4</a>
+                <a href="https://extrememath.org/">Extreme Math Link 5</a>
+                <a href="https://simple-education.xyz/#google_vignette">Extreme Math Link 6</a>
+            </div>
+            <button class="accordion">Minecraft</button>
+            <div class="panel">
+                <a href="https://g.deev.is/">Minecraft Link 1</a>
+                <a href="https://eaglercraft.q13x.com/">Minecraft Link 2</a>
+                <a href="https://ubg100.github.io/eaglercraft.html">Minecraft Link 3</a>
+                <a href="https://burritoedition.github.io/emu/Minecraft/web/index.html">Minecraft Link 4</a>
+                <a href="https://reslauncher.vercel.app/">Minecraft Link 5</a>
+                <a href="https://sd592g.github.io/zj684od4lfg/">Minecraft Link 6</a>
+                <a href="https://eagler.almondnet.cn/Nebula.html">Minecraft Link 7</a>
+                <a href="https://mess.eu.org/">Minecraft Link 8</a>
+                <a href="https://precisionclient-88k.pages.dev/">Minecraft Link 9</a>
+            </div>
+            <button class="accordion">Google Sites</button>
+            <div class="panel">
+                <a href="https://sites.google.com/site/tyronesgameshack/">Tyrone's Games Link 1</a>
+                <a href="https://sites.google.com/site/unblockedgames66ez/">Unblocked Games 66 Link 2</a>
+                <a href="https://sites.google.com/site/unblockedgame76/">Unblocked Games 76 Link 3</a>
+                <a href="https://sites.google.com/view/games-unblockedd/">Games Unblocked Link 4</a>
+                <a href="https://sites.google.com/site/classroom6x/unblockedgames">Classroom6x Link 5</a>
+                <a href="https://sites.google.com/view/games-unblocked/">Games Unblocked 2 Link 6</a>
+                <a href="https://sites.google.com/site/thegamecompilation/home?authuser=0">Unblocked Games World Link 7</a>
+            </div>
         </div>
-        <button class="accordion">Minecraft</button>
-        <div class="panel">
-            <a href="https://g.deev.is/">Minecraft link 1</a>
-            <a href="https://eaglercraft.q13x.com/">Minecraft link 2</a>
-            <a href="https://ubg100.github.io/eaglercraft.html">Minecraft link 3</a>
-            <a href="https://burritoedition.github.io/emu/Minecraft/web/index.html">Minecraft link 4</a>
-            <a href="https://reslauncher.vercel.app/">Minecraft link 5</a>
-            <a href="https://sd592g.github.io/zj684od4lfg/">Minecraft link 6</a>
-            <a href="https://eagler.almondnet.cn/Nebula.html">Minecraft link 7</a>
-            <a href="https://mess.eu.org/">Minecraft link 8</a>
-            <a href="https://precisionclient-88k.pages.dev/">Minecraft link 9</a>
-        </div>
-        <button class="accordion">Google sites</button>
-        <div class="panel">
-    <a href="https://sites.google.com/site/tyronesgameshack/">Tyrones games link 1</a>
-    <a href="https://sites.google.com/site/unblockedgames66ez/">Unblocked games 66 link 2</a>
-    <a href="https://sites.google.com/site/unblockedgame76/">Unblocked games 76 link 3</a>
-    <a href="https://sites.google.com/view/games-unblockedd/">games unblocked link 4</a>
-    <a href="https://sites.google.com/site/classroom6x/unblockedgames">Classroom6x link 5</a>
-    <a href="https://sites.google.com/view/games-unblocked/">games unblocked2 link 6</a>
-    <a href="https://sites.google.com/site/thegamecompilation/home?authuser=0">unblocked games world link 7</a>
-        </div>
-    
+
 <div id="coder" class="main-content">
             <h1>Coder Stuff</h1>
             <button class="accordion">Coding Resources</button>
@@ -205,7 +207,7 @@
             </div>
         </div>
 
-<div id="proxy" class="main-content">
+ <div id="proxy" class="main-content">
             <h1>Make a Proxy</h1>
             <button class="accordion">Guides</button>
             <div class="panel">
@@ -214,11 +216,11 @@
         </div>
     </div>
 
- <footer>
+<footer>
         <p>&copy; 2024 LINKED! | All Rights Reserved</p>
     </footer>
 
-<script>
+ <script>
         function showSection(sectionId) {
             var sections = document.getElementsByClassName("main-content");
             for (var i = 0; i < sections.length; i++) {
@@ -232,11 +234,7 @@
             acc[i].addEventListener("click", function() {
                 this.classList.toggle("active");
                 var panel = this.nextElementSibling;
-                if (panel.style.display === "block") {
-                    panel.style.display = "none";
-                } else {
-                    panel.style.display = "block";
-                }
+                panel.style.display = panel.style.display === "block" ? "none" : "block";
             });
         }
     </script>

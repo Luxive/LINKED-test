@@ -1,4 +1,3 @@
-body {
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,16 +5,21 @@ body {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LINKED!</title>
     <style>
-        body {
+        * {
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
             font-family: Arial, sans-serif;
             background-color: #121212;
             color: white;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
         }
         .sidebar {
-            height: 100vh;
             width: 250px;
-            position: fixed;
             background: linear-gradient(135deg, #3a3a3a, #1e1e1e);
             padding: 20px;
             box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
@@ -43,10 +47,10 @@ body {
             transform: scale(1.05);
         }
         .main-content {
-            margin-left: 260px;
+            flex: 1;
             padding: 20px;
             background-color: #262626;
-            min-height: 100vh;
+            overflow-y: auto;
             display: none;
         }
         .main-content.active {
@@ -188,7 +192,7 @@ body {
         </div>
     </div>
 
- <div id="multipurpose" class="main-content">
+<div id="multipurpose" class="main-content">
         <h1>Education</h1>
         <button class="accordion">Tools</button>
         <div class="panel">
@@ -196,7 +200,7 @@ body {
         </div>
     </div>
 
-<div id="coder" class="main-content">
+ <div id="coder" class="main-content">
         <h1>Coder Stuff</h1>
         <button class="accordion">Coding Resources</button>
         <div class="panel">
@@ -212,7 +216,7 @@ body {
         </div>
     </div>
 
- <div id="proxy" class="main-content">
+<div id="proxy" class="main-content">
         <h1>Make a Proxy</h1>
         <button class="accordion">Guides</button>
         <div class="panel">
@@ -220,11 +224,11 @@ body {
         </div>
     </div>
 
-  <footer>
+   <footer>
         <p>&copy; 2024 LINKED! | All Rights Reserved</p>
     </footer>
 
-<script>
+ <script>
         function showSection(sectionId) {
             var sections = document.getElementsByClassName("main-content");
             for (var i = 0; i < sections.length; i++) {
@@ -248,4 +252,3 @@ body {
     </script>
 </body>
 </html>
-

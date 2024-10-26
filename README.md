@@ -1,3 +1,4 @@
+<<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,17 +10,21 @@
             padding: 0;
             box-sizing: border-box;
         }
-        body {
+        html, body {
+            height: 100%;
             font-family: Arial, sans-serif;
             background-color: #121212;
             color: white;
+            overflow: hidden;
+        }
+        .container {
             display: flex;
             height: 100vh;
-            overflow: hidden;
+            width: 100vw;
         }
         .sidebar {
             width: 250px;
-            background: linear-gradient(135deg, #3a3a3a, #1e1e1e);
+            background: #1e1e1e;
             padding: 20px;
             box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
             overflow-y: auto;
@@ -110,43 +115,47 @@
             color: #ccc;
             background-color: #1e1e1e;
             border-top: 1px solid #333;
-            margin-top: 20px;
+            position: fixed;
+            bottom: 0;
+            width: calc(100% - 250px);
+            margin-left: 250px;
         }
     </style>
 </head>
 <body>
-    <div class="sidebar">
-        <h2>LINKED!</h2>
-        <a onclick="showSection('home')">Home</a>
-        <a onclick="showSection('proxies')">Proxies</a>
-        <a onclick="showSection('games')">Games</a>
-        <a onclick="showSection('movies')">Movies</a>
-        <a onclick="showSection('multipurpose')">Education</a>
-        <a onclick="showSection('coder')">Coder Stuff</a>
-        <a onclick="showSection('credits')">Credits</a>
-        <a onclick="showSection('proxy')">Make a Proxy</a>
-    </div>
+    <div class="container">
+        <div class="sidebar">
+            <h2>LINKED!</h2>
+            <a onclick="showSection('home')">Home</a>
+            <a onclick="showSection('proxies')">Proxies</a>
+            <a onclick="showSection('games')">Games</a>
+            <a onclick="showSection('movies')">Movies</a>
+            <a onclick="showSection('multipurpose')">Education</a>
+            <a onclick="showSection('coder')">Coder Stuff</a>
+            <a onclick="showSection('credits')">Credits</a>
+            <a onclick="showSection('proxy')">Make a Proxy</a>
+        </div>
 
 <div id="home" class="main-content active">
-        <h1>Welcome to LINKED!</h1>
-        <p>Select a category from the sidebar to get started.</p>
-    </div>
+            <h1>Welcome to LINKED!</h1>
+            <p>Select a category from the sidebar to get started.</p>
+        </div>
 
 <div id="proxies" class="main-content">
-        <h1>Proxies</h1>
-        <button class="accordion">Rammerhead</button>
-        <div class="panel">
-            <a href="#">Link 1 for RammerHead</a>
-            <a href="#">Link 2 for RammerHead</a>
+            <h1>Proxies</h1>
+            <button class="accordion">Rammerhead</button>
+            <div class="panel">
+                <a href="#">Link 1 for RammerHead</a>
+                <a href="#">Link 2 for RammerHead</a>
+            </div>
+            <button class="accordion">Interstellar</button>
+            <div class="panel">
+                <a href="#">Link 1 for Interstellar</a>
+                <a href="#">Link 2 for Interstellar</a>
+            </div>
         </div>
-        <button class="accordion">Interstellar</button>
-        <div class="panel">
-            <a href="#">Link 1 for Interstellar</a>
-            <a href="#">Link 2 for Interstellar</a>
-        </div>
-    </div>
 
- <div id="games" class="main-content">
+<div id="games" class="main-content">
         <h1>Games</h1>
         <button class="accordion">Extreme math</button>
         <div class="panel">
@@ -171,63 +180,45 @@
         </div>
         <button class="accordion">Google sites</button>
         <div class="panel">
-            <a href="https://sites.google.com/site/tyronesgameshack/">Tyrones games link 1</a>
-            <a href="https://sites.google.com/site/unblockedgames66ez/">Unblocked games 66 link 2</a>
-            <a href="https://sites.google.com/site/unblockedgame76/">Unblocked games 76 link 3</a>
-            <a href="https://sites.google.com/view/games-unblockedd/">games unblocked link 4</a>
-            <a href="https://sites.google.com/site/classroom6x/unblockedgames">Classroom6x link 5</a>
-            <a href="https://sites.google.com/view/games-unblocked/">games unblocked2 link 6</a>
-            <a href="https://sites.google.com/site/thegamecompilation/home?authuser=0">unblocked games world link 7</a>
+    <a href="https://sites.google.com/site/tyronesgameshack/">Tyrones games link 1</a>
+    <a href="https://sites.google.com/site/unblockedgames66ez/">Unblocked games 66 link 2</a>
+    <a href="https://sites.google.com/site/unblockedgame76/">Unblocked games 76 link 3</a>
+    <a href="https://sites.google.com/view/games-unblockedd/">games unblocked link 4</a>
+    <a href="https://sites.google.com/site/classroom6x/unblockedgames">Classroom6x link 5</a>
+    <a href="https://sites.google.com/view/games-unblocked/">games unblocked2 link 6</a>
+    <a href="https://sites.google.com/site/thegamecompilation/home?authuser=0">unblocked games world link 7</a>
         </div>
-    </div>
-
-<div id="movies" class="main-content">
-        <h1>Movies</h1>
-        <button class="accordion">Movies</button>
-        <div class="panel">
-            <a href="https://hdtoday.tv/filter?type=tv&quality=all&release_year=all&genre=3&country=all&page=46">HDTODAY link 1</a>
-            <a href="https://genesishd.tv/">HDTODAY link 2</a>
-            <a href="https://hdtoday.cc/">HDTODAY link 3</a>
+    
+<div id="coder" class="main-content">
+            <h1>Coder Stuff</h1>
+            <button class="accordion">Coding Resources</button>
+            <div class="panel">
+                <a href="#">Resource Link 1</a>
+            </div>
         </div>
-    </div>
-
-<div id="multipurpose" class="main-content">
-        <h1>Education</h1>
-        <button class="accordion">Tools</button>
-        <div class="panel">
-            <a href="https://chatgpt.com/">CHATGPT</a>
-        </div>
-    </div>
-
- <div id="coder" class="main-content">
-        <h1>Coder Stuff</h1>
-        <button class="accordion">Coding Resources</button>
-        <div class="panel">
-            <a href="#">Resource Link 1</a>
-        </div>
-    </div>
 
  <div id="credits" class="main-content">
-        <h1>Credits</h1>
-        <button class="accordion">Acknowledgements</button>
-        <div class="panel">
-            <a href="#">Credit Link 1</a>
+            <h1>Credits</h1>
+            <button class="accordion">Acknowledgements</button>
+            <div class="panel">
+                <a href="#">Credit Link 1</a>
+            </div>
         </div>
-    </div>
 
 <div id="proxy" class="main-content">
-        <h1>Make a Proxy</h1>
-        <button class="accordion">Guides</button>
-        <div class="panel">
-            <a href="#">Proxy Guide Link 1</a>
+            <h1>Make a Proxy</h1>
+            <button class="accordion">Guides</button>
+            <div class="panel">
+                <a href="#">Proxy Guide Link 1</a>
+            </div>
         </div>
     </div>
 
-   <footer>
+ <footer>
         <p>&copy; 2024 LINKED! | All Rights Reserved</p>
     </footer>
 
- <script>
+<script>
         function showSection(sectionId) {
             var sections = document.getElementsByClassName("main-content");
             for (var i = 0; i < sections.length; i++) {

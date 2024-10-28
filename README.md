@@ -138,7 +138,6 @@
         </div>
         <button class="accordion">Minecraft</button>
         <div class="panel">
-            <a href="https://g.deev.is/">Minecraft link 1</a>
             <a href="https://eaglercraft.q13x.com/">Minecraft link 2</a>
             <a href="https://ubg100.github.io/eaglercraft.html">Minecraft link 3</a>
             <a href="https://burritoedition.github.io/emu/Minecraft/web/index.html">Minecraft link 4</a>
@@ -150,13 +149,8 @@
         </div>
         <button class="accordion">Google sites</button>
         <div class="panel">
-            <a href="https://sites.google.com/site/tyronesgameshack/">Tyrones games link 1</a>
-            <a href="https://sites.google.com/site/unblockedgames66ez/">Unblocked games 66 link 2</a>
-            <a href="https://sites.google.com/site/unblockedgame76/">Unblocked games 76 link 3</a>
-            <a href="https://sites.google.com/view/games-unblockedd/">games unblocked link 4</a>
-            <a href="https://sites.google.com/site/classroom6x/unblockedgames">Classroom6x link 5</a>
-            <a href="https://sites.google.com/view/games-unblocked/">games unblocked2 link 6</a>
-            <a href="https://sites.google.com/site/thegamecompilation/home?authuser=0">unblocked games world link 7</a>
+            <a href="https://sites.google.com/view/games-unblocked/">games unblocked2 link 1</a>
+            <a href="https://sites.google.com/site/thegamecompilation/home?authuser=0">unblocked games world link 2</a>
         </div>
     </div>
 
@@ -166,7 +160,6 @@
         <div class="panel">
             <a href="https://hdtoday.tv/filter?type=tv&quality=all&release_year=all&genre=3&country=all&page=46">HDTODAY link 1</a>
             <a href="https://genesishd.tv/">HDTODAY link 2</a>
-            <a href="https://hdtoday.cc/">HDTODAY link 3</a>
         </div>
     </div>
 
